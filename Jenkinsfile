@@ -1,9 +1,8 @@
 node {
 
    stage('Checkout') {
-        // Get code from GitHub repo
-        
-       
+        // Get code from GitHub repo        
+        git url: 'https://github.com/saiavinashrepaka/techkubetest.git'       
    }
    stage('Build Maven') {
         sh  'cd techkubetest/application'
